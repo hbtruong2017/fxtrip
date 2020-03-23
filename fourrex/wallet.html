@@ -39,6 +39,15 @@ License: You must have a valid license purchased only from https://themes.getboo
 		});
 	</script>
 
+
+
+
+
+
+
+	<link href="./assets/vendors/custom/test.css" rel="stylesheet" type="text/css" />
+
+
 	<!--end::Fonts -->
 
 	<!--begin::Page Vendors Styles(used by this page) -->
@@ -115,7 +124,8 @@ License: You must have a valid license purchased only from https://themes.getboo
 	<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed " style="background-color: dodgerblue;">
 		<div class="kt-header-mobile__logo">
 			<a href="fourrex/index.html">
-				<img alt="Logo" src="./assets/media/logos/fourrexlogowhite.png" style="width: 45%;margin-top: 5px;margin-left: 90px;" />
+				<img alt="Logo" src="./assets/media/logos/fourrexlogowhite.png"
+					style="width: 45%;margin-top: 5px;margin-left: 90px;" />
 			</a>
 		</div>
 		<!-- <div class="kt-header-mobile__toolbar">
@@ -129,7 +139,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 	<div class="kt-grid kt-grid--hor kt-grid--root">
 		<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
 			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper " id="kt_wrapper">
-			
+
 				<!-- begin:: Header -->
 				<div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed " data-ktheader-minimize="on"
 					style="background-image: url(./assets/media/layout/header-bg-demo3.jpg)">
@@ -162,35 +172,36 @@ License: You must have a valid license purchased only from https://themes.getboo
 								<!-- begin:: Subheader -->
 								<div class="kt-subheader kt-grid__item" id="kt_subheader" style="margin-left: 0px;">
 
-									
-										
-											
-										
-									
-								</div> 
+
+
+
+
+
+								</div>
 
 								<!-- end:: Subheader -->
 
 								<!-- begin:: Content -->
-								
-								
 
-								<div class="kt-content kt-grid__item kt-grid__item--fluid"  >
+
+
+								<div class="kt-content kt-grid__item kt-grid__item--fluid">
 
 									<!--begin::Dashboard 4-->
 
 									<!--begin::Row-->
 									<div class="row">
-										<div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+										<div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1 " style="height: 160px;">
 
 											<!--begin::Portlet-->
-											<div class="kt-portlet kt-portlet--height-fluid" style="height: 160px;">
-												<div class="kt-portlet__head kt-portlet__head--noborder" style="background-color: skyblue;">
+											<div class="kt-portlet kt-portlet--height-fluid" style="height: 185px;">
+												<div class="kt-portlet__head kt-portlet__head--noborder"
+													style="background-color: skyblue;">
 													<div class="kt-portlet__head-label">
 														<h3 class="kt-portlet__head-title">Debit Card</h3>
-														
+
 													</div>
-													
+
 													<div class="kt-portlet__head-toolbar">
 														<div class="kt-portlet__head-toolbar-wrapper">
 															<div class="dropdown dropdown-inline">
@@ -204,68 +215,182 @@ License: You must have a valid license purchased only from https://themes.getboo
 																	<ul class="kt-nav">
 																		<li
 																			class="kt-nav__section kt-nav__section--first">
-																			<span class="kt-nav__section-text">Add Card</span>
+																			<span class="kt-nav__section-text">Add
+																				Card</span>
 																		</li>
 																		<li class="kt-nav__item">
 																			<a href="#" class="kt-nav__link">
 																				<i
 																					class="kt-nav__link-icon la la-print"></i>
-																				<span
-																					class="kt-nav__link-text">Change Card</span>
+																				<span class="kt-nav__link-text">Change
+																					Card</span>
 																			</a>
 																		</li>
 																		<li class="kt-nav__item">
 																			<a href="#" class="kt-nav__link">
 																				<i
 																					class="kt-nav__link-icon la la-copy"></i>
-																				<span
-																					class="kt-nav__link-text">Edit Card</span>
+																				<span class="kt-nav__link-text">Edit
+																					Card</span>
 																			</a>
 																		</li>
-																		
+
 																	</ul>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-												<div class="kt-portlet__body kt-portlet__body--fluid" style="height: 110px;">
+												<div class="kt-portlet__body kt-portlet__body--fluid"
+													style="height: 110px;">
 													<div class="kt-widget-19">
 														<div class="kt-widget-19__title" style="top: -8px;">
-															<div class="kt-widget-19__label"><small style="left: 100px;">SGD$</small></br>490.23</br></div>
-															
+															<div class="kt-widget-19__label"><small
+																	style="left: 100px;">SGD$</small></br>
+																	<label id = "amount">490.23</label></br>
+															</div>
+
 															<img class="kt-widget-19__bg"
 																src="./assets/media/misc/iconbox_bg.png" alt="bg" />
 														</div>
-														<div class="kt-widget-19__data" style="flex: none;">
+														<div class="kt-widget-19__data"
+															style="flex: none;height: 80px;">
 
 															Name : John Doe
 															</br>
 															Card No. : 1234-1234-1234-1234
 															</br>
 															Expiry : Oct-2023
-														</br></br>
-														
+															</br></br>
+
 														</div>
-													</div><a href="#" class="btn btn-m btn-elevate btn-brand" style="margin-top:58px;height:38%;width: 32%;text-align: center;">
-												
+													</div><a href="#" class="btn btn-m btn-elevate btn-brand"
+														style="margin-top:78px;height:32%;width: 35%;text-align: center;">
+
 														Top Up
-														
+
 													</a>
+
+
+
+													<button id="myBtn" class="btn btn-m btn-elevate btn-brand"
+														style="margin-left:5px;margin-top:78px;height:32%;width: 32%;text-align: center;">PayNow</button>
+
+													<!-- The Modal -->
+													<div id="myModal" class="modal">
+
+														<!-- Modal content -->
+														<div class="modal-content">
+															<div class="modal-header">
+
+																<h2>FourRex - PayNow</h2><span class="close"></span>
+															</div>
+															<div class="modal-body">
+																<div class="form-group row">
+																	<label class="col-xl-3 col-lg-3 col-form-label">Name
+																		/ Mobile No.</label>
+																	<div class="col-lg-9 col-xl-6">
+																		<input id="payeeNameInput" class="form-control" type="text"
+																			placeholder="e.g. John">
+																	</div>
+																</div>
+																<div class="form-group row">
+																	<label
+																		class="col-xl-3 col-lg-3 col-form-label">Amount</label>
+																	<div class="col-lg-9 col-xl-6">
+																		<input id="payeeAmountInput" class="form-control" type="text"
+																			placeholder="$">
+																	</div>
+																</div>
+																<!-- <div class="form-group row">
+																	<label class="col-xl-3 col-lg-3 col-form-label">Company Name</label>
+																	<div class="col-lg-9 col-xl-6">
+																		<input class="form-control" type="text" value="SMU">
+																		<span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span>
+																	</div>
+																</div> -->
+															</div>
+															<div class="modal-footer">
+																<button id="myBtn2"
+																	class="btn btn-m btn-elevate btn-brand"
+																	style="width: 100%;">PayNow</button>
+																<div id="myModal2" class="modal">
+
+																	<!-- Modal content -->
+																	<div class="modal-content" style="height: 90%;width: 100%;margin-left: -4px;">
+																		<div class="modal-header">Pay Now - Success <span class="close2"></span></div>
+																		<div class="modal-body">
+																			<div class="form-group row">
+																				<div class="col-lg-9 col-xl-6">
+																				<p style="text-align:center; font-size:large;color: black;">You have successfully paid
+																				
+																				</br>
+																				<label id = "payeename" style="text-align:center; font-size:large;color: black; class="col-xl-3 col-lg-3 col-form-label"> </label>
+																			</br>
+																			SGD$
+																				<label id = "payeeamount" style="text-align:center; font-size:large;color: black; class="col-xl-3 col-lg-3 col-form-label"> 
+																				</label>
+																			</br>
+																				</p>
+
+																			</div>
+																				<!-- <div class="col-lg-9 col-xl-6">
+																					
+																				</div>	
+																					
+																					<input class="form-control" type="text"
+																						placeholder="e.g. John">
+																				</div> -->
+																			</div>
+																			<!-- <div class="form-group row">
+																				<label
+																					class="col-xl-3 col-lg-3 col-form-label">Amount</label>
+																				<div class="col-lg-9 col-xl-6">
+																					<input class="form-control" type="text"
+																						placeholder="$">
+																				</div>
+																			</div>
+																			 -->
+
+																			<div class="form-group row">
+																				<button id="myBtn3"
+																	class="btn btn-m btn-elevate btn-brand"
+																	style="width: 100%;">Close</button>
+																			</div>
+
+
+
+																		</div>
+
+
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</div>
+
+
+													<!-- <a href="#" class="btn btn-m btn-elevate btn-brand"
+														style="margin-left:5px;margin-top:78px;height:32%;width: 32%;text-align: center;">
+
+														PayNow
+
+													</a> -->
 												</div>
 											</div>
 
 											<!--end::Portlet-->
 										</div>
-										
-										<div class="col-lg-6 col-xl-4 order-lg-2 order-xl-1">
+
+										<div class="col-lg-6 col-xl-4 order-lg-2 order-xl-1" style="margin-top: 40px;">
 
 											<!--begin::Portlet-->
 											<div class="kt-portlet kt-portlet--height-fluid-half kt-widget-13">
 												<div class="kt-portlet__body" style="background: lightcyan;">
 													<div id="kt-widget-slider-13-2" class="kt-slider carousel slide"
 														data-ride="carousel" data-interval="4000">
-														<div class="kt-slider__head" >
+														<div class="kt-slider__head">
 															<div class="kt-slider__label">Balances</div>
 															<div class="kt-slider__nav">
 																<a class="kt-slider__nav-prev carousel-control-prev"
@@ -279,33 +404,36 @@ License: You must have a valid license purchased only from https://themes.getboo
 																	<i class="fa fa-angle-right"></i>
 																</a>
 
-																
+
 															</div>
 														</div>
 														<div class="carousel-inner">
 															<div class="carousel-item active kt-slider__body">
-																<div class="kt-widget-13" >
+																<div class="kt-widget-13">
 																	<div class="kt-widget-13__body">
-																		<a class="kt-widget-13__title" href="#">$201.69 USD</a>
-																		
+																		<a class="kt-widget-13__title" href="#">$201.69
+																			USD</a>
+
 																	</div>
 																	<div class="kt-widget-13__foot">
 																		<div class="kt-widget-13__progress">
 																			<div class="kt-widget-13__progress-info">
-																				
-																				
-																				
+
+
+
 																				<div
 																					class="kt-widget-13__progress-status">
 																					~ Approx Rate: 1 SGD > $0.69 USD
 																				</div>
-																				<a href="#" class="btn btn-m btn-elevate btn-brand" style="width: 32%;text-align: center;">
-												
+																				<a href="#"
+																					class="btn btn-m btn-elevate btn-brand"
+																					style="width: 32%;text-align: center;">
+
 																					Exchange
-																					
+
 																				</a>
 																			</div>
-																			
+
 																		</div>
 																	</div>
 																</div>
@@ -313,8 +441,9 @@ License: You must have a valid license purchased only from https://themes.getboo
 															<div class="carousel-item kt-slider__body">
 																<div class="kt-widget-13">
 																	<div class="kt-widget-13__body">
-																		<a class="kt-widget-13__title" href="#">EUR 125.23</a>
-																		
+																		<a class="kt-widget-13__title" href="#">EUR
+																			125.23</a>
+
 																	</div>
 																	<div class="kt-widget-13__foot">
 																		<div class="kt-widget-13__progress">
@@ -323,10 +452,12 @@ License: You must have a valid license purchased only from https://themes.getboo
 																					class="kt-widget-13__progress-status">
 																					~ Approx Rate: 1 SGD > 0.64 EUR
 																				</div>
-																				<a href="#" class="btn btn-m btn-elevate btn-brand" style="width: 32%;text-align: center;">
-												
+																				<a href="#"
+																					class="btn btn-m btn-elevate btn-brand"
+																					style="width: 32%;text-align: center;">
+
 																					Exchange
-																					
+
 																				</a>
 																			</div>
 																		</div>
@@ -336,8 +467,9 @@ License: You must have a valid license purchased only from https://themes.getboo
 															<div class="carousel-item kt-slider__body">
 																<div class="kt-widget-13">
 																	<div class="kt-widget-13__body">
-																		<a class="kt-widget-13__title" href="#">GBP 0.00</a>
-																		
+																		<a class="kt-widget-13__title" href="#">GBP
+																			0.00</a>
+
 																	</div>
 																	<div class="kt-widget-13__foot">
 																		<div class="kt-widget-13__progress">
@@ -346,13 +478,15 @@ License: You must have a valid license purchased only from https://themes.getboo
 																					class="kt-widget-13__progress-status">
 																					~ Approx Rate: 1 SGD > 0.59 GBP
 																				</div>
-																				<a href="#" class="btn btn-m btn-elevate btn-brand" style="width: 32%;text-align: center;">
-												
+																				<a href="#"
+																					class="btn btn-m btn-elevate btn-brand"
+																					style="width: 32%;text-align: center;">
+
 																					Exchange
-																					
+
 																				</a>
 																			</div>
-																			
+
 																		</div>
 																	</div>
 																</div>
@@ -364,20 +498,21 @@ License: You must have a valid license purchased only from https://themes.getboo
 
 											<!--end::Portlet-->
 
-											
+
 										</div>
-										
+
 
 										<div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
 
 											<!--begin::Portlet-->
 											<div class="kt-portlet kt-portlet--height-fluid" style="height: 160px;">
-												<div class="kt-portlet__head kt-portlet__head--noborder" style="background-color: beige;">
+												<div class="kt-portlet__head kt-portlet__head--noborder"
+													style="background-color: beige;">
 													<div class="kt-portlet__head-label">
 														<h3 class="kt-portlet__head-title">Credit Card</h3>
-														
+
 													</div>
-													
+
 													<div class="kt-portlet__head-toolbar">
 														<div class="kt-portlet__head-toolbar-wrapper">
 															<div class="dropdown dropdown-inline">
@@ -391,25 +526,26 @@ License: You must have a valid license purchased only from https://themes.getboo
 																	<ul class="kt-nav">
 																		<li
 																			class="kt-nav__section kt-nav__section--first">
-																			<span class="kt-nav__section-text">Add Card</span>
+																			<span class="kt-nav__section-text">Add
+																				Card</span>
 																		</li>
 																		<li class="kt-nav__item">
 																			<a href="#" class="kt-nav__link">
 																				<i
 																					class="kt-nav__link-icon la la-print"></i>
-																				<span
-																					class="kt-nav__link-text">Change Card</span>
+																				<span class="kt-nav__link-text">Change
+																					Card</span>
 																			</a>
 																		</li>
 																		<li class="kt-nav__item">
 																			<a href="#" class="kt-nav__link">
 																				<i
 																					class="kt-nav__link-icon la la-copy"></i>
-																				<span
-																					class="kt-nav__link-text">Edit Card</span>
+																				<span class="kt-nav__link-text">Edit
+																					Card</span>
 																			</a>
 																		</li>
-																		
+
 																	</ul>
 																</div>
 															</div>
@@ -420,7 +556,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 													<div class="kt-widget-19">
 														<div class="kt-widget-19__title" style="top: -8px;">
 															<div class="kt-widget-19__label">tBank</div>
-															
+
 															<img class="kt-widget-19__bg"
 																src="./assets/media/misc/iconbox_bg.png" alt="bg" />
 														</div>
@@ -431,7 +567,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 															Card No. : 2222-1111-3334-4443
 															</br>
 															Expiry : Nov-2024
-														</br></br>
+															</br></br>
 														</div>
 													</div>
 												</div>
@@ -440,7 +576,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 											<!--end::Portlet-->
 										</div>
 
-										
+
 										<div class="col-lg-6 col-xl-4 order-lg-2 order-xl-1">
 											<div class="kt-portlet kt-portlet--tabs kt-portlet--height-fluid">
 												<div class="kt-portlet__head">
@@ -492,7 +628,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 																				<div
 																					class="kt-timeline__item-section-icon">
 																					<i
-																					class="flaticon-paper-plane-1 kt-font-brand"></i>
+																						class="flaticon-paper-plane-1 kt-font-brand"></i>
 																				</div>
 																			</div>
 																			<span
@@ -500,10 +636,10 @@ License: You must have a valid license purchased only from https://themes.getboo
 																				PM</span>
 																		</div>
 																		<a href="" class="kt-timeline__item-text">
-																			FX Exchange
+																			Transaction : Patrick
 																		</a>
 																		<div class="kt-timeline__item-info">
-																			100 SGD > 69.23 USD
+																			100.00 SGD 
 																		</div>
 																	</div>
 
@@ -535,7 +671,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 
 																	<!--End::Item -->
 
-																	
+
 
 																	<!--Begin::Item -->
 																	<div
@@ -546,7 +682,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 																				<div
 																					class="kt-timeline__item-section-icon">
 																					<i
-																					class="flaticon-paper-plane-1 kt-font-brand"></i>
+																						class="flaticon-paper-plane-1 kt-font-brand"></i>
 																				</div>
 																			</div>
 																			<span
@@ -561,7 +697,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 																		</div>
 																	</div>
 
-																	
+
 																</div>
 
 																<!--End::Timeline 1 -->
@@ -1021,8 +1157,8 @@ License: You must have a valid license purchased only from https://themes.getboo
 												</div>
 											</div>
 										</div>
-										
-										
+
+
 										<div class="col-lg-12 col-xl-8 order-lg-2 order-xl-1">
 
 											<!--begin::Portlet-->
@@ -1033,7 +1169,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 													</div>
 													<div class="kt-portlet__head-toolbar">
 														<div class="kt-portlet__head-toolbar-wrapper">
-															
+
 														</div>
 													</div>
 												</div>
@@ -1066,7 +1202,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 																</div>
 															</div>
 														</div>
-														
+
 													</div>
 												</div>
 												<div class="kt-portlet__foot kt-portlet__foot--md">
@@ -1100,11 +1236,10 @@ License: You must have a valid license purchased only from https://themes.getboo
 					<div class="kt-footer kt-grid__item"
 						style="background-image: url(./assets/media/layout/footer-bg-demo3.jpg)" id="kt_footer">
 						<div class="kt-container">
-							
+
 							<div class="kt-footer__bottom">
 								<div class="kt-footer__copyright">
-									2020&nbsp;&copy;&nbsp;<a href="#" target="_blank"
-										class="kt-link">FOUR REX</a>
+									2020&nbsp;&copy;&nbsp;<a href="#" target="_blank" class="kt-link">FOUR REX</a>
 								</div>
 								<div class="kt-footer__menu">
 									FOUR REX
@@ -1120,7 +1255,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 
 		<!-- end:: Page -->
 
-		
+
 
 		<!-- begin:: Scrolltop -->
 		<div id="kt_scrolltop" class="kt-scrolltop">
@@ -1131,16 +1266,16 @@ License: You must have a valid license purchased only from https://themes.getboo
 
 		<!-- begin:: Footer Mobile -->
 		<div id="" class="kt-header-mobile  kt-mobile--fixed" style="position: sticky;bottom: 0px;padding: 5px;">
-			
+
 			<div class="bottomMenuNavBar kt-demo-icon" style="margin: auto;">
 				<div class="kt-demo-icon__preview" style="margin: auto;">
 					<i class="fa fa-wallet" style="margin: auto;"></i>
 				</div>
 
 				<div class="kt-demo-icon__class" style="position:absolute;bottom:2px">
-					<a href="fourrex/wallet.html">	Wallet </a></div>
+					<a href="fourrex/wallet.html"> Wallet </a></div>
 			</div>
-			
+
 			<div class="bottomMenuNavBar kt-demo-icon" style="margin: auto;">
 				<div class="kt-demo-icon__preview" style="margin: auto;">
 					<i class="fab fa-buromobelexperte" style="margin: auto;"></i>
@@ -1149,7 +1284,7 @@ License: You must have a valid license purchased only from https://themes.getboo
 				<div class="kt-demo-icon__class" style="position:absolute;bottom:2px">
 					<a href="fourrex/fxplus.html">FxPlus! </a></div></br>
 			</div>
-			
+
 			<div class="bottomMenuNavBar kt-demo-icon" style="margin: auto;">
 				<div class="kt-demo-icon__preview" style="margin: auto;">
 					<i class="fab flaticon2-line-chart" style="margin: auto;"></i>
@@ -1335,6 +1470,125 @@ License: You must have a valid license purchased only from https://themes.getboo
 		<script src="./assets/js/demo1/pages/dashboard.js" type="text/javascript"></script>
 
 		<!--end::Page Scripts -->
+
+		<script type="text/javascript">
+			// Get the modal
+			var modal = document.getElementById("myModal");
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on the button, open the modal
+			btn.onclick = function () {
+				modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function () {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+
+
+
+			var payeename = document.getElementById("payeeNameInput");
+			var payeeamount = document.getElementById("payeeAmountInput");
+
+			// payeename
+			// payeeamount
+
+			//modal2 
+
+			// Get the modal
+			var modal2 = document.getElementById("myModal2");
+
+			// Get the button that opens the modal
+			var btn2 = document.getElementById("myBtn2");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close2")[0];
+
+			// When the user clicks on the button, open the modal
+			btn2.onclick = function () {
+				modal2.style.display = "block";
+				// alert(payeename.value);
+				// alert(payeeamount.value);
+				var pname = payeename.value;
+				var pamount = payeeamount.value;
+				document.getElementById("payeename").innerHTML = pname;
+				document.getElementById("payeeamount").innerHTML = pamount;
+				
+				
+				var amount = document.getElementById("amount").innerText;
+				// alert(amount);
+				var amounta = parseFloat(amount);
+				var pamounta = parseFloat(pamount);
+				
+				// alert(amounta);
+				// alert(pamounta);
+
+
+				var diff = amounta - pamounta;
+				// alert(diff);
+				
+				document.getElementById("amount").innerHTML = diff;
+				
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function () {
+				modal2.style.display = "none";
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function (event) {
+				if (event.target == modal2) {
+					modal2.style.display = "none";
+					modal.style.display = "none";
+				}
+			}
+
+
+
+
+
+
+			var btn3 = document.getElementById("myBtn3");
+
+
+
+			btn3.onclick = function () {
+				modal2.style.display = "none";
+				modal.style.display = "none";
+			}
+
+
+
+
+
+
+
+
+
+		</script>
+
+		<script type="text/javascript">
+			
+
+
+		</script>
+
+
 </body>
 
 <!-- end::Body -->
